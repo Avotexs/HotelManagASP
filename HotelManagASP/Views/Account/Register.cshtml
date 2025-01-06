@@ -1,0 +1,39 @@
+﻿@model HotelManagASP.Models.ClientRegistrationViewModel
+
+<form asp-action="Register" method="post">
+    <div>
+        <label for="Nom">Nom</label>
+        <input asp-for="Nom" />
+    </div>
+    <div>
+        <label for="Prenom">Prenom</label>
+        <input asp-for="Prenom" />
+    </div>
+    <div>
+        <label for="Adresse">Adresse</label>
+        <input asp-for="Adresee" />
+        </div>
+    
+    <div>
+        <label for="Telephone">Telephone</label>
+        <input asp-for="Tele" />
+    </div>
+    <div>
+        <label for="CIN">CIN</label>
+        <input asp-for="CIN" />
+    </div>
+    <div>
+        <label for="Email">Email</label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <label for="Password">Password</label>
+        <input asp-for="Password" type="password" />
+    </div>
+
+    <div>
+        <label for="ConfirmPassword">Confirm Password</label>
+        <input asp-for="ConfirmPassword" type="password" />
+    </div>
+    <button type="submit">Register</button>
+</form>

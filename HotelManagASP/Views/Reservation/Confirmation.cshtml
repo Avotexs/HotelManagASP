@@ -1,0 +1,11 @@
+﻿<h2>Confirmation de Réservation</h2>
+
+<div>
+    <p>Nom du client : @ViewBag.Reservation.Client</p>
+    <p>Type de chambre : @ViewBag.Reservation.Chambre</p>
+    <p>Date d'arrivée : @ViewBag.Reservation.dateArrive.ToShortDateString()</p>
+    <p>Date de sortie : @ViewBag.Reservation.dateSortie.ToShortDateString()</p>
+    <p>Prix total : @ViewBag.Reservation.prixtotal DH</p>
+</div>
+
+<a asp-action="Index" asp-controller="Hotel">Retourner à la liste des chambres</a>

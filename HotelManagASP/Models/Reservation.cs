@@ -15,6 +15,6 @@
         public double prixtotal { get; set; }
         public string statut { get; set; }
 
-        public  List<Reservation> Reservations { get; set; }
+        
     }
 }

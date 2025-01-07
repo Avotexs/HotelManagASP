@@ -95,7 +95,12 @@
                     <h6>Description : @item.Description </h6>
                     </div>
 
-                <button>Reserver maintenant</button>
+                <button>
+                    <a asp-action="Reserver" asp-controller="Reservation" asp-route-chambreId="@item.id"
+                       style="color: white; text-decoration: none;">
+                        Réserver maintenant
+                    </a>
+                </button>
             </div>
 
         }

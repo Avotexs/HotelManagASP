@@ -1,0 +1,19 @@
+﻿@model HotelManagASP.Models.ReservationViewModel
+
+<h2>Réserver une chambre</h2>
+
+<form asp-action="Reserver" method="post">
+    <input type="hidden" asp-for="ChambreId" />
+
+    <div>
+        <label for="dateArrive">Date d'arrivée</label>
+        <input asp-for="dateArrive" type="date" />
+    </div>
+
+    <div>
+        <label for="dateSortie">Date de sortie</label>
+        <input asp-for="dateSortie" type="date" />
+    </div>
+
+    <button type="submit">Réserver</button>
+</form>

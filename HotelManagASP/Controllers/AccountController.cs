@@ -78,17 +78,17 @@ namespace HotelManagASP.Controllers
 
                 if (client != null)
                 {
-                    // Vérifier le mot de passe
+                    
                     if (BCrypt.Net.BCrypt.Verify(model.Password, client.MotDePasse))
                     {
-                        // Vérifier si l'email a été vérifié
+                      
                         if (!client.IsEmailVerified)
                         {
                             ModelState.AddModelError("", "Votre email n'a pas encore été vérifié. Veuillez vérifier votre boîte de réception.");
                             return View(model);
                         }
 
-                        // Si tout est correct, connecter l'utilisateur
+                        
                         HttpContext.Session.SetInt32("ClientId", client.id);
                         return RedirectToAction("Index", "Hotel");
                     }

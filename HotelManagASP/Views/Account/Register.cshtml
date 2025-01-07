@@ -111,6 +111,7 @@ body {
     <div>
         <label for="ConfirmPassword">Confirm Password</label>
         <input asp-for="ConfirmPassword" type="password" />
+        <div asp-validation-summary="All" class="text-danger"></div>
     </div>
     <button type="submit">Register</button>
 </form>

@@ -85,6 +85,7 @@
     <div>
         <label for="Password">Password</label>
         <input asp-for="Password" type="password" />
+        <div asp-validation-summary="All" class="text-danger"></div>
     </div>
     <button type="submit">Login</button>
 </form>

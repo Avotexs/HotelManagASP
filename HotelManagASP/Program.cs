@@ -1,4 +1,5 @@
 using HotelManagASP.Data;
+using HotelManagASP.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,8 @@ builder.Services.AddDbContext<ContexteHM>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
 
 builder.Services.AddSession();
+builder.Services.AddSingleton<EmailSender>();
+
 var app = builder.Build();
 
 

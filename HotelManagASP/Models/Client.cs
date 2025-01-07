@@ -12,7 +12,7 @@
 
         public string MotDePasse { get; set; }
         public string Email { get; set; }
-
+        public bool IsEmailVerified { get; set; }
         public List<Reservation> Reservations { get; set; }
 
 

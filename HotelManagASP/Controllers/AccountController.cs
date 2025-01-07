@@ -69,7 +69,7 @@ namespace HotelManagASP.Controllers
                 {
                     // Set authentication cookie or session
                     HttpContext.Session.SetInt32("ClientId", client.id);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Hotel");
                 }
 
                 ModelState.AddModelError("", "Invalid email or password.");

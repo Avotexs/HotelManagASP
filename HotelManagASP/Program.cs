@@ -9,10 +9,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ContexteHM>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
 
-builder.Services.AddSession(options =>
-{
-    options.IdleTimeout = TimeSpan.FromMinutes(30);
-});
+builder.Services.AddSession();
 var app = builder.Build();
 
 
